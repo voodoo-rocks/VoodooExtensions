@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VoodooExtensions.iml" filepath="$PROJECT_DIR$/VoodooExtensions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voodoo_extensions/voodoo_extensions.iml" filepath="$PROJECT_DIR$/voodoo_extensions/voodoo_extensions.iml" />
+    </modules>
+  </component>
+</project>
