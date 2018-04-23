@@ -1,7 +1,5 @@
 package rocks.voodoo.extensions
 
-import android.app.TimePickerDialog
-import android.content.Context
 import java.text.DateFormat
 import java.text.ParseException
 import java.util.*
@@ -17,16 +15,6 @@ fun String.toDateWithFormat(dateFormat: DateFormat): Date? {
 
 fun Date.toStringWithFormat(dateFormat: DateFormat): String {
     return dateFormat.format(this)
-}
-
-fun Date.showTimeDialog(context: Context, listener: TimePickerDialog.OnTimeSetListener) {
-    val calendar = Calendar.getInstance()
-    calendar.time = this
-    TimePickerDialog(context, listener,
-            calendar.get(Calendar.HOUR_OF_DAY),
-            calendar.get(Calendar.MINUTE),
-            false)
-            .show()
 }
 
 fun getTimeZoneOffsetInMinutes(): Int {
