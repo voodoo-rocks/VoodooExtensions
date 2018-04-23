@@ -52,3 +52,12 @@ fun Context.showTimeDialog(date: Date, listener: TimePickerDialog.OnTimeSetListe
             calendar.get(Calendar.MINUTE), false)
             .show()
 }
+
+fun Context.getSystemAppSettingsIntent(): Intent {
+    return Intent("android.settings.APP_NOTIFICATION_SETTINGS")
+            // for android 5-7
+            .putExtra("app_package", packageName)
+            .putExtra("app_uid", applicationInfo.uid)
+            // for android 8
+            .putExtra("android.provider.extra.APP_PACKAGE", packageName)
+}
